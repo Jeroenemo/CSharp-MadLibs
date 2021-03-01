@@ -24,6 +24,7 @@ namespace MadLibs
 
     public void Configure(IApplicationsBuilder app)
     {
+      app.UseDeveloperExceptionPage();
       app.UseRouting();
 
       app.UseEndpoints(routes =>

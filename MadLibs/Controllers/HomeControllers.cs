@@ -6,6 +6,12 @@ namespace FriendLetter.Controllers
     {
       [Route("/form")]
       public ActionResult Form() { return View(); }
+
+      [Route("/madlib")]
+      public ActionResult MadLib()
+      {
+        MadLibVariable myMadLibVariable = new MadLibVariable();
+      }
     }
 
 }
