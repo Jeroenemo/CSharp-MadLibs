@@ -1,6 +1,6 @@
 namespace ProjectName
 {
-  public class ClassName
+  public class MadLibVariable
   {
     // properties, constructors, methods, etc. go here
   }
