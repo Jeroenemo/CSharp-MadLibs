@@ -1,6 +1,6 @@
-namespace ProjectName
+namespace MadLibs.Models
 {
-  public class MadLibVariable
+  public class MadLibsVariable
   {
     public string PluralNoun1 { get; set; }
     public string PluralNoun2 { get; set; }

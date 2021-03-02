@@ -15,14 +15,15 @@ namespace MadLibs
         .AddEnvironmentVariables();
       Configuration = builder.Build();
     }
+
     public IConfigurationRoot Configuration { get; }
 
-    public void ConfigurationServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
       services.AddMvc();
     }
 
-    public void Configure(IApplicationsBuilder app)
+    public void Configure(IApplicationBuilder app)
     {
       app.UseDeveloperExceptionPage();
       app.UseRouting();
@@ -34,9 +35,8 @@ namespace MadLibs
 
       app.Run(async (context) =>
       {
-        await context.Response.WriteAsync("you done goofed");
+        await context.Response.WriteAsync("Hello World!");
       });
     }
-
   }
 }
